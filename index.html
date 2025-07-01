@@ -11,47 +11,66 @@
 </head>
 <body>
   <header class="header"> <!--ENCABEZADO-->
-    <a href="index.html">
-      <img src="./assets/logo.png" alt="Logo de Nova Inmuebles"/>
-    </a>
-    <nav>
-      <ul><!--MENÚ-->
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="./pages/nosotros.html">Nosotros</a></li>
-        <li><a href="./pages/servicios.html">Servicios</a></li>
-        <li><a href="./pages/propiedades.html">Propiedades</a></li>
-        <li><a href="./pages/contacto.html">Contacto</a></li>
-      </ul>
+  
+    <nav class="navbar navbar-expand-lg navbar-light w-100">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/logo.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/propiedades.html">Propiedades</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
   <main>
-    <h1>Nova Inmuebles</h1>
+    <h1>Bienvenido a Nova Inmuebles</h1>
+      <section class="seccion-intro">
+        <div>
+          <p>En <strong>Nova Inmuebles</strong>, nos dedicamos a conectar personas con propiedades ideales. Ya sea que estés buscando comprar, vender o alquilar, estamos para acompañarte en cada paso con asesoramiento personalizado, transparencia y compromiso.</p>
+        </div>
 
-    <form><!--FORMULARIO DE BÚSQUEDA-->
-      <select name="tipo_operacion">
-        <option value="">Tipo de Operación</option>
-        <option value="venta">Venta</option>
-        <option value="alquiler">Alquiler</option>
-      </select>
+        <div>    
+          <h2>¿Qué estás buscando?</h2>
+            <ul>
+              <li>Casas y Departamentos en venta y alquiler</li>
+              <li>Locales comerciales y terrenos para inversión</li>
+              <li>Tasaciones profesionales</li>
+              <li>Asesoramiento legal y financiero</li>
+            </ul>
+        </div>  
 
-      <select name="tipo_propiedad">
-        <option value="">Tipo de Propiedad</option>
-        <option value="departamento">Departamento</option>
-        <option value="casa">Casa</option>
-        <option value="terreno">Terreno</option>
-        <option value="local">Local</option>
-      </select>
+        <div>
+          <h2>Por qué elegirnos</h2>
+            <ul>
+              <li>✅ Atención personalizada</li>
+              <li>✅ Amplia experiencia en el rubro</li>
+              <li>✅ Publicaciones actualizadas y detalladas</li>
+              <li>✅ Excelente reputación local</li>
+            </ul>
+        </div>
+  
+        <div>
+          <h2>Operamos en:</h2>
+            <p>Córdoba Capital, Villa Allende, Alta Gracia, y alrededores.</p>
+        </div>
 
-      <select name="dormitorios">
-        <option value="">Dormitorios</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3+</option>
-      </select>
-
-      <button type="submit">Buscar</button>
-    </form>
+        <div>
+          <h2>Contactanos</h2>
+            <p>¡Estamos para ayudarte! Consultá nuestras propiedades o comunicate con nuestro equipo para recibir atención directa.</p>
+        </div>
+      </section>
+    
   </main>
 
   <footer> <!--PIE DE PÁGINA-->

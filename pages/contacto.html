@@ -6,74 +6,76 @@
   <title>Contacto | Nova Inmuebles</title>
   <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon"/>
   <link rel="stylesheet" href="../styles/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 </head>
 
 <body>
-  <header class="header"><!--ENCABEZADO-->
-    <a href="../index.html">
-      <img src="../assets/logo.png" alt="Logo de Nova Inmuebles"/>
-    </a>
-    <nav>
-      <ul><!--MENÚ-->
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="propiedades.html">Propiedades</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+  <header class="header"> <!--ENCABEZADO-->
+  
+    <nav class="navbar navbar-expand-lg navbar-light w-100">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/logo.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="propiedades.html">Propiedades</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
   <main>
     <h1>Contacto</h1>
 
-    <section class="form-contacto">
-      <form> <!--FORMULARIO DE CONTACTO-->
-        <div class="form-row">
-          <div class="form-group">
+    <div class="form-contacto-container">
+      <div class="columnaIzq">
+        <div class="formulario">
+          <form>
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" placeholder="Lucas" />
-          </div>
-          <div class="form-group">
             <label for="apellido">Apellido:</label>
             <input type="text" id="apellido" placeholder="Godoy" />
-          </div>
-          <div class="form-group">
             <label for="celular">Celular:</label>
             <input type="tel" id="celular" placeholder="3516787064" />
-          </div>
-          <div class="form-group">
             <label for="email">Email:</label>
             <input type="email" id="email" placeholder="lucasgodoy@gmail.com" />
-          </div>
-          <div class="form-group full-width">
             <label for="consulta">Consulta:</label>
             <textarea id="consulta" placeholder="Escriba su consulta"></textarea>
-          </div>
+            <button type="submit">Enviar</button>
+          </form>
         </div>
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
+      </div>
 
-    <section>
-      <p> <!--INFO DE CONTACTO -->
-        Celular: 3518007064<br />
-        Email: <a href="mailto:info@novainmuebles.com">info@novainmuebles.com</a><br />
-        Dirección: Av. Colón 3300
-      </p>
-    </section>
+      <div class="columnaDer">
+        <div class="info-contacto">
+          <p><img src="../assets/imagen11.jpg" alt="direccion">Dirección: Av. Colón 4300</p><br>
+            <p><img src="../assets/imagen12.jpg" alt="telefono">Teléfono: 3518007064</p><br>
+            <p><img src="../assets/imagen13.jpg" alt="email">Email: <a href="mailto:info@novainmuebles.com"> info@novainmuebles.com</a></p>
+        </div>
 
-    <section> <!--MAPA DE GOOGLE MAPS-->
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.6053495700908!2d-64.238005425119!3d-31.397443695334555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298c945f87f13%3A0xaca064e38e232756!2sAv.%20Col%C3%B3n%204300%2C%20X5003DDZ%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1747794626239!5m2!1ses-419!2sar"
-        width="100%"
-        height="450"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
+        <div class="mapa"> <!--MAPA DE GOOGLE MAPS-->
+         <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.6053495700908!2d-64.238005425119!3d-31.397443695334555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298c945f87f13%3A0xaca064e38e232756!2sAv.%20Col%C3%B3n%204300%2C%20X5003DDZ%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1747794626239!5m2!1ses-419!2sar"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+         ></iframe>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer> <!--PIE DE PÁGINA-->
