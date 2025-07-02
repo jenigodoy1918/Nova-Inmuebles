@@ -11,8 +11,7 @@
 </head>
 
 <body>
-  <header class="header"> <!--ENCABEZADO-->
-  
+  <header class="header"> <!--ENCABEZADO, se agrega bootstrap para el menú-->
     <nav class="navbar navbar-expand-lg navbar-light w-100">
       <a class="navbar-brand" href="../index.html">
         <img src="../assets/logo.png" alt="Logo">
@@ -36,92 +35,95 @@
 
   <main>
     <h1>Propiedades</h1> <!--CARRUSEL DE IMÁGENES CON PROPIEDADES-->
-
-    <div class="grid-carruseles">
-   <!-- PROPIEDAD 1 -->
-    <div class="carousel">
-      <div id="carouselCasa" class="carousel slide mb-5" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../assets/casa1.png" class="d-block w-100" alt="Casa 1">
-          </div>
-          <div class="carousel-item">
-            <img src="../assets/casa2.png" class="d-block w-100" alt="Casa 2">
-          </div>
-          <div class="carousel-item">
-            <img src="../assets/casa3.png" class="d-block w-100" alt="Casa 3">
+      <div class="grid-carruseles">
+    <!-- PROPIEDAD 1 -->
+        <div class="carousel">
+          <div id="carouselCasa" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active"><!--Imágenes del Carrusel-->
+                <img src="../assets/casa1.png" class="d-block w-100" alt="Casa 1">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/casa2.png" class="d-block w-100" alt="Casa 2">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/casa3.png" class="d-block w-100" alt="Casa 3">
+              </div>
+            </div>
+            <!--Botones/Flechas del Carrusel-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasa" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCasa" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          
+            <div class="descripcion-carousel"> <!--Descripción de la Propiedad-->
+              <h5>Casa en Venta</h5>
+              <p>Ubicada en barrio Residencial Vélez Sarsfield. La misma está compuesta por: Hall de ingreso, Living comedor, Cocina comedor, Tres dormitorios una habitación en suite con vestidor abertura con persianas y rejas, Dependencia de servicio con baño, Baño completo, Patio con césped quincho pileta, Cochera para dos vehículos.
+              <br><strong>RECIBE MENOR</strong> </p>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasa" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselCasa" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
-        
+
+    <!-- PROPIEDAD 2 -->
+      <div class="carousel">
+        <div id="carouselTerreno" class="carousel slide mb-5" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../assets/terreno1.png" class="d-block w-100" alt="Terreno 1">
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/terreno2.png" class="d-block w-100" alt="Terreno 2">
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/terreno3.png" class="d-block w-100" alt="Terreno 3">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselTerreno" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselTerreno" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
           <div class="descripcion-carousel">
-          <h5>Casa en Venta</h5>
-          <p>Ubicada en barrio Residencial Vélez Sarsfield. La misma está compuesta por: Hall de ingreso, Living comedor, Cocina comedor, Tres dormitorios una habitación en suite con vestidor abertura con persianas y rejas, Dependencia de servicio con baño, Baño completo, Patio con césped quincho pileta, Cochera para dos vehículos.
-            <br><strong>RECIBE MENOR</strong> </p>
+            <h5>Terreno en Venta</h5>
+            <p>Venta de lote en Villa Yacanto a metros de av. Rene Favaloro. A minutos del Durazno, del Puente Blanco y San Miguel de los Ríos. Entrada desde Córdoba Capital por ruta 36. El lote mide 10 metros de frente y 45 metros de largo, se encuentra con muy poca pendiente, ideal para construcción.</p>
+          </div>
         </div>
       </div>
+
+    <!-- PROPIEDAD 3 -->
+      <div class="carousel">
+        <div id="carouselDepartamento" class="carousel slide mb-5" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../assets/departamento1.png" class="d-block w-100" alt="Departamento 1">
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/departamento2.png" class="d-block w-100" alt="Departamento 2">
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/departamento3.png" class="d-block w-100" alt="Departamento 3">
+            </div>
+          </div>
+          
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepartamento" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselDepartamento" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+          <div class="descripcion-carousel">
+            <h5>Departamento en Alquiler</h5>
+            <p>En Altos de Villa Cabrera, ubicado sobre la calle Losa Bravo 3314 depto 1 primer piso, acceso por escalera, a 1 cuadra de av. Rafael Nuñez, con cercanía a toda la zona comercial y residencial. La propiedad se distribuye de la siguiente manera: cocina comedor, dos dormitorios, baño completo y patio.</p>
+          </div>
+        </div>
       </div>
-<!-- PROPIEDAD 2 -->
- <div class="carousel">
-<div id="carouselTerreno" class="carousel slide mb-5" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="../assets/terreno1.png" class="d-block w-100" alt="Terreno 1">
     </div>
-    <div class="carousel-item">
-      <img src="../assets/terreno2.png" class="d-block w-100" alt="Terreno 2">
-    </div>
-    <div class="carousel-item">
-      <img src="../assets/terreno3.png" class="d-block w-100" alt="Terreno 3">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselTerreno" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselTerreno" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-
-  <div class="descripcion-carousel">
-    <h5>Terreno en Venta</h5>
-    <p>Venta de lote en Villa Yacanto a metros de av. Rene Favaloro. A minutos del Durazno, del Puente Blanco y San Miguel de los Ríos. Entrada desde Córdoba Capital por ruta 36. El lote mide 10 metros de frente y 45 metros de largo, se encuentra con muy poca pendiente, ideal para construcción.</p>
-  </div>
-  </div>
-</div>
-
-<!-- PROPIEDAD 3 -->
- <div class="carousel">
-<div id="carouselDepartamento" class="carousel slide mb-5" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="../assets/departamento1.png" class="d-block w-100" alt="Departamento 1">
-    </div>
-    <div class="carousel-item">
-      <img src="../assets/departamento2.png" class="d-block w-100" alt="Departamento 2">
-    </div>
-    <div class="carousel-item">
-      <img src="../assets/departamento3.png" class="d-block w-100" alt="Departamento 3">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepartamento" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselDepartamento" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-
-  <div class="descripcion-carousel">
-    <h5>Departamento en Alquiler</h5>
-    <p>En Altos de Villa Cabrera, ubicado sobre la calle Losa Bravo 3314 depto 1 primer piso, acceso por escalera, a 1 cuadra de av. Rafael Nuñez, con cercanía a toda la zona comercial y residencial. La propiedad se distribuye de la siguiente manera: cocina comedor, dos dormitorios, baño completo y patio.</p>
-  </div>
-</div>
-</div>
-</div>
   </main>
 
   <footer> <!--PIE DE PÁGINA-->
@@ -133,5 +135,6 @@
     <img src="../assets/whatsapp.png" alt="Logo de WhatsApp" />
     <a href="https://wa.me/5493518007064" target="_blank">WhatsApp</a>
   </footer>
+
 </body>
 </html>

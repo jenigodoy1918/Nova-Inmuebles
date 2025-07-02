@@ -1,0 +1,19 @@
+@use "extend";
+@import "variables";
+
+footer { //estilos de Pie de Página
+  @extend %bloque; //Se utiliza extend para reutilizar estilos.
+  text-align: center;
+  
+  img{
+    max-height: 20px;
+    vertical-align: middle;
+    margin: 0 5px;
+  }
+  
+  a {
+    color: $color-texto;
+    font-weight: 600;
+    margin: 0 5px;
+  }
+}

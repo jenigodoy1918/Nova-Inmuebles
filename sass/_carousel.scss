@@ -1,0 +1,41 @@
+@import "variables";
+@import "mixin";
+
+.grid-carruseles { //estilos de carrusel de la página Propiedades.
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: start;
+
+  .carousel {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+
+    img { //Se utiliza mixin para pasar por parámetro las propiedades.
+      @include image-style(100%, auto, $borde-radio);
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  .carousel-control-prev, .carousel-control-next{
+    height: 370px;
+    filter: invert(1);
+  }
+
+  .descripcion-carousel {
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .descripcion-carousel h5{
+    font-size: 1.5rem;
+    margin: 0 0 0.2rem;
+  }
+
+  .descripcion-carousel p{
+    font-size: $font-size;
+    color: $color-texto;
+  }
+}

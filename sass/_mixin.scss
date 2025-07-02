@@ -1,0 +1,6 @@
+@mixin image-style($max-width, $height, $border-radius) 
+{   //Se utiliza mixim para imágenes de páginas de servicios y carrusel.
+    max-width: $max-width;
+    height: $height;
+    border-radius: $border-radius;
+}

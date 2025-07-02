@@ -1,0 +1,17 @@
+@import "variables";
+@import "mixin";
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  
+  .servicios{
+    text-align: center;
+
+    img { //Se utiliza mixin para pasar por parámetro las propiedades.
+      @include image-style(100%, auto, $borde-radio)
+    }
+
+  }
+}

@@ -1,0 +1,30 @@
+@use "extend";
+@import "variables";
+
+header { //se utiliza nesting para estilos de encabezado y menú de navegación
+  @extend %bloque; //Se utiliza extend para reutilizar estilos.
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: $font-size;
+
+  .navbar {
+    padding: 1rem 2rem;
+  }
+
+  .navbar-brand img {
+    max-height: 100px;
+  }
+
+  .navbar-nav .nav-link {
+    color: $color-link;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: $borde-radio;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #adabab;
+    }
+  }
+}

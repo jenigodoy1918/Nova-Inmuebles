@@ -1,0 +1,18 @@
+@media (max-width: 425px) { //se aplican estilos para vista para celular.
+
+  .servicios-grid, .grid-carruseles { 
+    grid-template-columns: 1fr;
+  }
+
+  .carousel img {
+    height: 220px;
+  }
+
+  .form-contacto-container {
+    flex-direction: column;
+  }
+
+  .columnaIzq, .columnaDer {
+    flex: 1 1 100%;
+  }
+}

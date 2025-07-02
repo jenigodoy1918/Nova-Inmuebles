@@ -1,0 +1,40 @@
+@use "header";
+@use "footer";
+@use "servicios";
+@use "carousel";
+@use "formulario";
+@use "responsive";
+@use "mixin";
+@use "extend";
+@import "variables"; //Se importan variables
+
+body { //Estilos del body
+  font-family: $fuente-principal;
+  background-color: $color-fondo;
+  color: $color-texto;
+  line-height: 1.6;
+  padding: $padding-general;
+  display: flex;
+  flex-direction: column;
+}
+
+main { //Estilos de main, título y div.
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 0;
+  flex: 1;
+  font-size: $font-size;
+  text-align: justify;
+
+  h1{
+    color: $color-texto;
+    margin: 1rem 0;
+    text-align: left;
+  }
+
+  div { //Se utiliza extend para reutilizar estilos
+    @extend %bloque;
+  }
+}
+
+

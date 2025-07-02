@@ -1,0 +1,7 @@
+@import "variables";
+
+%bloque{//se utiliza extend para aplicar estilos a los bloques de encabezado, pie de pagina y div.
+    background-color: $color-bloques;
+    border-radius: $borde-radio;
+    padding: $padding-general;
+}
